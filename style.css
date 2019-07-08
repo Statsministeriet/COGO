@@ -20,6 +20,8 @@ body {
     top: 40px;
     right: 100px;
     width: 100%;
+    z-index: 999;
+
 
 }
 
@@ -78,6 +80,13 @@ body {
     background-color: rgb(20, 89, 201);
     color: white;
 }
+@media only screen and (max-width: 750px) {
+  .secondElementGrid{
+    display: grid;
+    grid-template-columns: 100%;
+
+  }
+}
 
 .secondElementGrid div{
     margin: 30px;
@@ -110,6 +119,14 @@ body {
     border: 10px;
     overflow: hidden;
 
+}
+
+@media only screen and (max-width: 750px) {
+  .thirdElemtGrid{
+    display: grid;
+    grid-template-columns: 100%;
+
+  }
 }
 .thirdElemtGridHalf img{
     width: 100%;
@@ -184,15 +201,78 @@ body {
   opacity: 0.8;
 }
 
-.fourthElementContainer img{
+.fourthElementContainerCompany{
   height: 60px;
   margin: 0;
   top: 50%;
   transition: transform .5s ease;
+}
+
+@media only screen and (max-width: 1100px) {
+  .fourthElementContainerCompany{
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .fourthElementContainerCompany{
+    height: 30px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+
+  .fourthElementGrid{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .fourthElementContainerCompany{
+    height: 70px;
+    margin-top: 15px;
+  }
+}
+
+.fourthElementContainerCompany:hover{
+  transform: scale(1.3);
 
 }
 
-.fourthElementContainer img:hover{
-  transform: scale(1.3);
+.fourthElementContainerProfile img{
+  height: 200px;;
+  border-radius: 50%;
+  width: 200px;
+}
+.fourthElementContainerProfile h3 {
+  height: 40px;
+}
 
+.fourthElementContainerProfile {
+  margin:7px;
+}
+
+
+.fourthElementGridProfile{
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1040px) {
+  .fourthElementGridProfile{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .fourthElementContainerProfile img{
+    height: 150px;;
+    border-radius: 50%;
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .fourthElementGridProfile{
+    display: grid;
+    grid-template-columns: 100%;
+  }
 }
