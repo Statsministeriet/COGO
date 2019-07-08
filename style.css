@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+
+}
+
+
+ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    position: relative;
+    top: 40px;
+    right: 100px;
+    width: 100%;
+
+}
+
+.firstElement{
+    background-image: url('./media/finalwaves.png');
+    background-size:100% 100%;
+    display: block;
+    height: 600px;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    text-decoration: none;
+    margin-right: 30px;
+
+}
+
+.firstElementGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    text-align: left;
+    margin-left: 100px;
+    padding-top: 100px;
+
+  }
+.firstElementGrid object{
+    height: 400px;
+    float: right;
+    margin-right: 100px;
+}
+.firstElementGrid h1{
+    font-size: 70px;
+    color: rgb(20, 89, 201);
+}
+
+.secondElementGrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+    text-align: left;
+    margin:60px;
+    background-color: rgb(20, 89, 201);
+    color: white;
+}
+
+.secondElementGrid div{
+    margin: 30px;
+}
+
+.secondElementGrid div img{
+    width: 60%;
+}
+
+
+.thirdElemtGrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0;
+    text-align: left;
+    margin:0;
+    border: 10px;
+}
+.thirdElemtGridHalf img{
+    width: 100%;
+    margin:0px;
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 10;
+}
+
+.thirdElemtGridFourth{
+    margin:0px;
+    padding: 0px;
+}
+.thirdElemtGridFourth img{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.thirdElementGridFourthImageOverlay{
+    height: 40px;
+    margin-top:-40px;
+    padding-left: 40px;
+    visibility: hidden;
+    z-index: 5;
+}
+
+
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: right;
+    width: 25%;
+    margin-bottom: 16px;
+    margin-top: 100px;
+    padding: 0 8px;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .fourthElement::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
