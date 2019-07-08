@@ -5,6 +5,11 @@ body {
 
 }
 
+.logo{
+  position: absolute;
+  padding-left: 80px;
+  padding-top: 40px;
+}
 
 .firstElement ul {
     list-style-type: none;
@@ -22,12 +27,11 @@ body {
     background-image: url('./media/finalwaves.png');
     background-size:100% 100%;
     display: block;
-    height: 600px;
+    height: 900px;
 }
 
 .firstElement li {
     float: right;
-    z-index: 101;
 }
 
 .firstElement li a {
@@ -51,8 +55,8 @@ body {
     grid-template-columns: auto auto;
     padding: 10px;
     text-align: left;
-    margin-left: 100px;
-    padding-top: 100px;
+    margin-left: 15%;
+    padding-top: 200px;
 
   }
 .firstElementGrid object{
@@ -73,7 +77,6 @@ body {
     margin:60px;
     background-color: rgb(20, 89, 201);
     color: white;
-    font-family: 'DM Serif Display', serif;
 }
 
 .secondElementGrid div{
@@ -86,10 +89,14 @@ body {
 
 .secondElementGrid p{
   font-size: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+
 }
 
 .secondElementGridTagline{
   font-size: 80px;
+  font-family: 'DM Serif Display', serif;
+
 
 }
 
