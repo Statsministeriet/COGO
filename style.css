@@ -171,6 +171,28 @@ body {
 
 .fourthElement{
   background-color: #FFFEDA;
-  margin: -10px 0 0px 0;
   padding: 100px;
+  text-align: center;
+}
+
+
+.fourthElementGrid{
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.fourthElementContainer img{
+  height: 60px;
+  margin: 0;
+  top: 50%;
+  transition: transform .5s ease;
+
+}
+
+.fourthElementContainer img:hover{
+  transform: scale(1.3);
+
 }
