@@ -65,7 +65,7 @@ body {
     margin-right: 100px;
 }
 .firstElementGrid h1{
-    font-size: 70px;
+    font-size: 50px;
     color: rgb(20, 89, 201);
 }
 
@@ -88,13 +88,13 @@ body {
 }
 
 .secondElementGrid p{
-  font-size: 30px;
+  font-size: 20px;
   font-family: 'Josefin Sans', sans-serif;
 
 }
 
 .secondElementGridTagline{
-  font-size: 80px;
+  font-size: 60px;
   font-family: 'DM Serif Display', serif;
 
 
