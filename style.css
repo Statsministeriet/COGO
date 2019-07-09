@@ -5,6 +5,20 @@ body {
 
 }
 
+button {
+  background-color: #FFFEDA; /* Green */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+button:hover{
+  background-color: lightskyblue;
+}
+
 .logo{
   position: absolute;
   padding-left: 80px;
@@ -54,18 +68,29 @@ body {
 
 .firstElementGrid {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
     padding: 10px;
     text-align: left;
     margin-left: 15%;
     padding-top: 200px;
-
   }
+@media only screen and (max-width: 900px) {
+  .firstElementGrid{
+    grid-template-columns: 100%;
+  }
+}
+
 .firstElementGrid object{
     height: 400px;
     float: right;
     margin-right: 100px;
+    transition: transform .5s ease;
 }
+.firstElementGrid object:hover{
+
+  transform: scale(1.05);
+}
+
 .firstElementGrid h1{
     font-size: 50px;
     color: rgb(20, 89, 201);
@@ -79,7 +104,15 @@ body {
     margin:60px;
     background-color: rgb(20, 89, 201);
     color: white;
+    transition: transform .5s ease;
+
 }
+
+.secondElementGrid:hover{
+
+  transform: scale(1.02);
+}
+
 @media only screen and (max-width: 750px) {
   .secondElementGrid{
     display: grid;
@@ -99,16 +132,17 @@ body {
 .secondElementGrid p{
   font-size: 20px;
   font-family: 'Josefin Sans', sans-serif;
-
 }
 
 .secondElementGridTagline{
   font-size: 60px;
   font-family: 'DM Serif Display', serif;
-
-
 }
-
+@media only screen and (max-width: 900px) {
+  .secondElementGridTagline{
+    font-size: 40px;
+  }
+}
 
 .thirdElemtGrid{
     display: grid;
@@ -256,15 +290,10 @@ body {
   text-align: center;
 }
 
-@media only screen and (max-width: 1040px) {
+@media only screen and (max-width: 1100px) {
   .fourthElementGridProfile{
     display: grid;
     grid-template-columns: 50% 50%;
-  }
-  .fourthElementContainerProfile img{
-    height: 150px;;
-    border-radius: 50%;
-    width: 150px;
   }
 }
 
